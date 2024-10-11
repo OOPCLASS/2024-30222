@@ -1,10 +1,16 @@
 public class Main {
 
   /**
-   * Here are 10 problem examples that can help your students get used to Java syntax while practicing basic control structures, loops, conditionals, and functions:
+   * Here are 10 problem examples that can help your
+   * students get used to Java syntax while practicing
+   * basic control structures, loops, conditionals, and
+   * functions:
    *
    * ### 1. **Sum of Numbers**
-   *    Write a program that takes an integer `n` from the user and calculates the sum of all integers from 1 to `n` using both a `for` loop and a `while` loop. Compare the outputs.
+   *    Write a program that takes an integer `n` from
+   *    the user and calculates the sum of all integers
+   *    from 1 to `n` using both a `for` loop and a `while`
+   *    loop. Compare the outputs.
    *
    * ### 2. **Even or Odd**
    *    Write a program that takes an integer input
