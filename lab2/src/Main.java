@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
   /**
@@ -69,6 +71,21 @@ public class Main {
    * @param args
    */
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    int value = 5;
+    System.out.println(add(10, value));
+    Scanner scanner = new Scanner(System.in);
+    // read one char
+    char c = scanner.next().charAt(0);
+    System.out.println("You entered: " + c);
+    // read a string
+    String s = scanner.next();
+    System.out.println("You entered: " + s);
+  }
+
+  // add 2 numbers
+  public static int add(int a, int b) {
+    int r = a + b;
+    b += 1;
+    return r;
   }
 }
