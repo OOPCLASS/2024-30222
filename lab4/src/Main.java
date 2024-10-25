@@ -31,10 +31,13 @@ import oop.Person;
     Clase implicate: Produs, Comanda, Client, Magazin
     - Produs: are nume, preț și stoc.
     - Client: are nume, adresa și o listă de comenzi.
-    - Comanda: conține o listă de produse comandate și metode pentru a calcula valoarea totală a comenzii.
-    - Magazin: gestionează stocul și comenzi, permițând clienților să plaseze comenzi noi.
+    - Comanda: conține o listă de produse comandate și metode pentru a
+    calcula valoarea totală a comenzii.
+    - Magazin: gestionează stocul și comenzi, permițând clienților să
+    plaseze comenzi noi.
     Extensii:
-    - Adaugă metode în Magazin pentru a verifica stocul înainte de plasarea unei comenzi și pentru a aplica reduceri speciale anumitor clienți.
+    - Adaugă metode în Magazin pentru a verifica stocul înainte de plasarea
+    unei comenzi și pentru a aplica reduceri speciale anumitor clienți.
 */
 public class Main {
 
