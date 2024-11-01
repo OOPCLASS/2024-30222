@@ -5,6 +5,10 @@ import ro.taximetrie.model.StandardDriver;
 public class Main {
 
   public static void main(String[] args) {
+    Driver fastDriver = new Driver();
+    Driver slowDriver = new Driver();
+    System.out.println(fastDriver.equals(slowDriver));
+
     StandardDriver standardDriver = new StandardDriver();
     standardDriver.setName("Amalia");
 

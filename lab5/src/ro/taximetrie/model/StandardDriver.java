@@ -11,7 +11,6 @@ public class StandardDriver extends Driver {
   }
 
   public boolean equals(Object obj) {
-    // TODO implement method
     return false;
   }
 }

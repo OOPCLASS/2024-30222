@@ -52,4 +52,13 @@ public class Driver {
   public String getDescription() {
     return "Driver: " + name + " - " + rating + " stars.";
   }
+
+  public boolean equals(Object obj) {
+  // this si obj
+    if (this.name != null) {
+      return this.name.equals(((Driver) obj).name);
+    } else {
+      return ((Driver) obj).name == null;
+    }
+  }
 }
