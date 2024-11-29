@@ -1,10 +1,13 @@
 package ro.library.model;
 
+import java.util.Comparator;
+import java.util.Objects;
+
 public abstract class Book implements Comparable {
 
   private String ISBN;
   protected int numberOfPages;
-  public Author author = new Author();
+  public Author author = new Author("");
   
   public Book() {
     
@@ -32,6 +35,10 @@ public abstract class Book implements Comparable {
     System.out.println(details);
   }
 
+  public Author getAuthor() {
+    return this.author;
+  }
+
   public abstract double computeScore();
 
   private Author[] computeSomething(int numberOfPages) {
@@ -40,8 +47,24 @@ public abstract class Book implements Comparable {
 
   @Override
   public int compareTo(Object object) {
-    // TODO implementation for comparing 2 Book instances
-    // this.getAuthor().getName() si object.getAuthor().getName()
+    if (object instanceof Book) {
+      Book book = (Book) object;
+      if (this.getAuthor() == null) {
+        if (book.getAuthor() == null) {
+          return 0;
+        }
+        return -1;
+      } else {
+        if (book.getAuthor() == null) {
+          return 1;
+        }
+        String thisAuthorName = this.getAuthor().getName();
+        String bookAuthorName = book.getAuthor().getName();
+        return thisAuthorName != null ? thisAuthorName.compareTo(bookAuthorName): -1;
+      }
+    }
+    // should not get here as long as we're not
+    // comparing book objects with other type instances
     return 0;
   }
 }

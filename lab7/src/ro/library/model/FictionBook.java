@@ -1,9 +1,11 @@
 package ro.library.model;
 
-import java.io.Serializable;
-
 public class FictionBook extends Book implements Comparable, UltraComparable {
 
+
+  public FictionBook(String ISBN, int numberOfPages, Author author) {
+    super(ISBN, numberOfPages, author);
+  }
 
   @Override
   public double computeScore() {
